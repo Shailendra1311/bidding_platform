@@ -1,0 +1,16 @@
+-- Insert sample users
+INSERT INTO users (username, password, email, role) VALUES
+('exampleuser', 'examplepassword', 'example@example.com', 'user'),
+('adminuser', 'adminpassword', 'admin@example.com', 'admin');
+
+-- Insert sample items
+INSERT INTO items (name, description, starting_price, current_price, end_time) VALUES
+('Vintage Watch', 'A classic vintage watch from the 1960s.', 100.00, 100.00, '2024-06-30 23:59:59');
+
+-- Insert sample bids
+INSERT INTO bids (item_id, user_id, bid_amount) VALUES
+(1, 1, 120.00);
+
+-- Insert sample notifications
+INSERT INTO notifications (user_id, message) VALUES
+(1, 'You have been outbid on item: Vintage Watch');
